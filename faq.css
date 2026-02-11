@@ -1,0 +1,98 @@
+/* General body styling */
+body {
+  background-color: #f0f0f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the FAQ section */
+.faq-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* FAQ heading */
+.faq-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1e2a38;
+}
+
+/* FAQ Question Styling */
+.faq-question {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Question hover effect */
+.faq-question:hover {
+  background-color: #e68900;
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px;
+  margin: 0 0 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text */
+  display: none; /* Initially hidden */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 0 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

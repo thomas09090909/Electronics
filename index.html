@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics Shop - Home</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/background-color.js"></script>
+    <script defer src="js/date-time.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><h1>Electronics Shop</h1></a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="favourites.html">Favourites</a>
+        <a href="faq.html">Faq</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <a href="login.html" class="login-button">Login</a>
+
+      <div class="current-date-time">
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
+    </header>
+
+    <main>
+      <aside class="category-menu">
+        <ul>
+          <li>Phone</li>
+          <li>Computer Systems</li>
+          <li>Computer Peripherals</li>
+          <li>TV</li>
+          <li>VR</li>
+        </ul>
+      </aside>
+
+      <div>
+        <div class="featured-products">
+          <div class="promo-banner" style="background-color: orange">
+            <h2>Performance Boost - Save Up to 55%</h2>
+            <blockquote>
+              "An unbeatable deal! Boost your PC's performance at an incredible
+              discount of up to 55%. Don't miss this limited-time offer."
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pictures/combo-deal.png" alt="Combo Deal Image" />
+          </div>
+          <div class="product-details">
+            <h3>Combo Deal - Save $125.00</h3>
+            <p>Intel Core i7 + Corsair Vengeance RAM + ASUS ROG Strix Z690</p>
+            <p>Price: $427.97</p>
+            <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
+            <br /><br />
+            <a href="favourites.html" class="add-to-favourites-button"
+              >Add to favourites</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="pictures/desktop-computer-image.png"
+              alt="Desktop Computers Image"
+            />
+          </div>
+          <div class="product-details">
+            <h4>Desktop Computers - Save $30.00</h4>
+            <p>ABS Gaming PC + Acer Monitor + Razer Headset</p>
+            <p>Price: $2,489.97</p>
+            <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
+            <br /><br />
+            <a href="favourites.html" class="add-to-favourites-button"
+              >Add to favourites</a
+            >
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="pictures/phone1.png" alt="Google Pixel 9" />
+          </div>
+          <div class="product-details">
+            <h4>Google Pixel 9</h4>
+            <h3>Price: <strong>$579</strong> <del>$979</del></h3>
+            <a href="cart.html" class="add-to-cart-button">Add to Cart</a>
+            <br /><br />
+            <a href="favourites.html" class="add-to-favourites-button"
+              >Add to favourites</a
+            >
+          </div>
+        </div>
+
+        <!-- Background Color Change Button -->
+        <div class="background-color-section">
+          <button id="color-button">Change Background Color</button>
+        </div>
+
+        <div class="promo-banner" style="background-color: orange">
+          <h2>ASUS NUC Configurator - Check it Now</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Electronics</h3>
+        </div>
+        <div class="footer-column">
+          <h3>Pages</h3>
+          <ul>
+            <li>Cart</li>
+            <li id="open-popup">Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Creators</h3>
+          <ul>
+            <li>Ospan A.</li>
+            <li>Sanakov Y.</li>
+            <li>Zharasuly M.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Electronics Shop</p>
+      </div>
+    </footer>
+
+    <!-- Popup Contact Form -->
+    <div id="contact-popup" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-button" id="close-popup">&times;</span>
+        <h2>Contact Us</h2>
+        <form action="submit-contact.php" method="POST">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

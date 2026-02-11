@@ -1,0 +1,314 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+header {
+  background-color: #1e2a38;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 3px solid #ff9800;
+  color: #ff9800;
+}
+
+.login-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e68900;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.category-menu {
+  flex: 1;
+  background-color: #e8e8f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.category-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-menu li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.category-menu li:last-child {
+  border-bottom: none;
+}
+
+.featured-products {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.promo-banner {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.product-image {
+  width: 300px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.product-details {
+  padding: 20px;
+}
+
+.product-details h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.add-to-cart-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.add-to-cart-button:hover {
+  background-color: darkorange;
+}
+
+.add-to-favourites-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.add-to-favourites:hover {
+  background-color: darkorange;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Popup Contact Form */
+.popup-overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.popup-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-content button {
+  display: block;
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.popup-content button:hover {
+  background-color: #e68900;
+}
+
+.background-color-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#color-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#color-button:hover {
+  background-color: darkorange;
+}
+.current-date-time {
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  font-size: 14px;
+  color: white;
+}
+
+#date-time {
+  font-weight: normal;
+}
+
+#open-popup {
+  cursor: pointer;
+}

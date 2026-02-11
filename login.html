@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Electronics Shop</title>
+    <link rel="stylesheet" href="style/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Electronics</h1>
+      <br />
+      <!-- Replace with your logo -->
+
+      <h2>Sign In</h2>
+
+      <form action="dashboard.html" method="post">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="SIGN IN" class="login-button" />
+        </div>
+
+        <!-- <div class="form-group">
+          <input
+            type="button"
+            value="GET ONE-TIME SIGN IN CODE"
+            class="secondary-button"
+          />
+        </div> -->
+
+        <p>New to Electronics Shop? <a href="register.html">Sign Up</a></p>
+
+        <div class="separator">OR</div>
+
+        <div class="social-login">
+          <button class="google-login">
+            <i class="icon-google" aria-label="GoogleIcon"></i>SIGN IN WITH
+            GOOGLE
+          </button>
+        </div>
+      </form>
+
+      <div class="footer">
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </body>
+</html>
